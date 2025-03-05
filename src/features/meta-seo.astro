@@ -1,0 +1,31 @@
+---
+import Config from "@configs/config.json"
+
+const { title, description, image, url } = Astro.props;
+const siteUrl = url || Config['uz'].site;
+const imageUrl = image || Config['uz'].image;
+const descriptionContent = description || Config['uz'].description;
+---
+
+<head>
+  <title>{title ?? Config["uz"]?.title }</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="description" content={descriptionContent} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={descriptionContent} />
+  <meta property="og:image" content={imageUrl} />
+  <meta property="og:url" content={siteUrl} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={descriptionContent} />
+  <meta name="twitter:image" content={imageUrl} />
+  <meta name="generator" content={Astro.generator} />
+   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>

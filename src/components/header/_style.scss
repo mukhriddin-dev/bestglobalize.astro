@@ -1,0 +1,13 @@
+header {
+    nav{
+        ul {
+            li {
+                a{
+                    &:hover {
+                        color: goldenrod;
+                    }
+                }
+            }
+        }
+    }
+}

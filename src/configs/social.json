@@ -1,0 +1,44 @@
+{
+    "telegram":{
+        "title":"Telegram",
+        "icon":"telegram",
+        "url":"https://t.me",
+        "isActive":"true"
+    },
+    "facebook":{
+        "title": "Facebook",
+        "icon": "facebook",
+        "url": "https://facebook.com",
+        "isActive": "true"
+    },
+    "twitter":{
+        "title": "Twitter",
+        "icon": "twitter",
+        "url": "https://twitter.com",
+        "isActive": "true"
+    },
+    "instagram":{
+        "title": "Instagram",
+        "icon": "instagram",
+        "url": "https://instagram.com",
+        "isActive": "true"
+    },
+    "linkedin":{
+        "title": "LinkedIn",
+        "icon": "linkedin",
+        "url": "https://linkedin.com",
+        "isActive": ""
+    },
+    "youtube":{
+        "title": "YouTube",
+        "icon": "youtube",
+        "url": "https://youtube.com",
+        "isActive": ""
+    },
+    "github":{
+        "title": "GitHub",
+        "icon": "github",
+        "url": "https://github.com",
+        "isActive": ""
+    }
+}

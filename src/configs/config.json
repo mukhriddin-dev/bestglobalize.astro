@@ -1,0 +1,26 @@
+{
+    "uz": {
+        "description": "Site description",
+        "title": "Site.com - Site description",
+        "image": "https://picsum.photos/id/123/100/100",
+        "site": "https://site.com"
+    },
+    "ru": {
+        "description": "Site description",
+        "title": "Site.com - Site description",
+        "image": "https://picsum.photos/id/123/100/100",
+        "site": "https://site.com"
+    },
+    "en": {
+        "description": "Site description",
+        "title": "Site.com - Site description",
+        "image": "https://picsum.photos/id/123/100/100",
+        "site": "https://site.com"
+    },
+    "tags": ["landing page"],
+    "author": {
+        "name": "Mukhriddin Khodiev",
+        "email": "khodieff@gmail.com",
+        "url": "https://github.com/mukhriddin-dev"
+    }
+}
