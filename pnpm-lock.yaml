@@ -15,7 +15,7 @@ importers:
         specifier: ^4.0.9
         version: 4.0.12(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(sass-embedded@1.85.1))
       astro:
-        specifier: ^5.3.0
+        specifier: ^5.4.2
         version: 5.4.2(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.35.0)(sass-embedded@1.85.1)(typescript@5.8.2)
       flowbite:
         specifier: ^3.1.2
