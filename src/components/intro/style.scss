@@ -4,34 +4,89 @@
   background-position: 0 0;
   background-size: cover;
   position: relative;
-  background-color: red;
 
-  
+}
 
-  .layer{
-   padding-top: 180px;
-   position: relative;
-    .text-content {
-      padding: 42px;
-      color:#ffff;
-      p {
-        font-size: 32px;
-        margin-bottom: 20px;
-        font-weight: 400;
-      }
-      h1 {
-        line-height: normal;
-        font-size: 52px;
-        span {
-          font-size: 32px;
-        }
-      }
-  
-      h2 {
-        font-size: 22px;
-        color:#D9C47D;
-      }
-    }
+.layer {
+  padding-top: 180px;
+  position: relative;
+}
+
+.text-content {
+  padding: 42px;
+  color: #ffffff;
+}
+
+.text-content p {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.text-content h1 {
+  line-height: normal;
+  font-size: 52px;
+}
+
+.text-content h2 {
+  font-size: 22px;
+  color: #d9c47d;
+}
+
+@media (max-width:1280px) {
+  #intro {
+    height: auto;
+    padding: 0 0 4px 0;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .layer {
+    padding-top: 120px;
   }
 
+  .text-content {
+    padding: 32px;
+  }
+
+  .text-content p {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .text-content h1 {
+    font-size: 44px;
+    line-height: normal;
+  }
+
+  .text-content h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .layer {
+    padding-top: 80px;
+  }
+
+  .text-content {
+    padding: 20px;
+  }
+
+  .text-content p {
+    font-size: 20px;
+  }
+
+  .text-content h1 {
+    font-size: 32px;
+  }
+
+  .text-content h1 span {
+    font-size: 20px;
+  }
+
+  .text-content h2 {
+    font-size: 16px;
+  }
 }

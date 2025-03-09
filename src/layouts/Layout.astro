@@ -7,25 +7,25 @@ import "@css/global.css";
 
 <!doctype html>
 <html lang={"uz"}>
-	<MetaSeo/>
-	<Header/>
-	<body>
-		<main>
-			<slot />
-		</main>
-	</body>
-	<Footer/>
+  <MetaSeo />
+  <body>
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		box-sizing: border-box;
-		scroll-behavior: smooth;
-	}
+  html,
+  body {
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
 
-	main{
-		min-height: 100vh;
-	}
+  main {
+    min-height: 100vh;
+  }
 </style>

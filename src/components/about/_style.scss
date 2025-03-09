@@ -1,0 +1,32 @@
+.imgSibling {
+    border: solid 8px rgba(255, 255, 255, 0.721);
+}
+
+#about img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#about h2 {
+    font-size: 36px;
+    line-height: 44px;
+}
+
+#about .meetTeam {
+    background-image: url(/public/team.png);
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width:576px) {
+
+    #about .meetTeam {
+        background-image: url(/public/1402032909500297427793854.jpg);
+        object-fit: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+}

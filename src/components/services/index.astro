@@ -1,15 +1,53 @@
 ---
 import "./_style.scss";
+import { servicesData } from "@mocks/index";
 ---
 
-<section id="service">
+<section id="service" class="w-full h-auto bg-white py-20">
   <div class="container mx-auto">
-    <div class="mx-auto">
-        <p class="text-center">Services</p>
-        <h1 class="text-center">What can we offer</h1>
-       <small class="text-center">
-        Decisions are made by professionals. We guarantee high quality of service.
-       </small>
+    <div class="px-3">
+      <div class="flex flex-col justify-center items-center gap-y-5">
+        <p class="text-center text-[#060040] text-xl montserrat-600">
+          Xizmatlar
+        </p>
+        <h4 class="text-center text-[#262B3F] montserrat-500">
+          Biz nimani taklif qilishimiz
+        </h4>
+        <p class="text-[#9B9B9B] text-center montserrat-400">
+          Qarorlar mutaxassislar tomonidan qabul qilinadi. Biz yuqori sifatli
+          xizmat ko'rsatishni kafolatlaymiz.
+        </p>
+        <div class="mt-10">
+          <button class="btn">
+            <span class="text-white montserrat-500"
+              >Jismoniy Shaxslar Uchun</span
+            >
+          </button>
+        </div>
+      </div>
+      <div
+        class="flex flex-wrap items-center justify-center sm:justify-center md:justify-center lg:justify-between xl:justify-between 2xl:justify-between gap-[60px] mt-10 item-center px-3"
+      >
+        {
+          servicesData?.map((item: any) => {
+            return (
+              <div class="serviseCard w-full   sm:w-full  md:w-full lg:w-[450px] xl:w-[570px] 2xl:w-[570px] min-h-[180px] sm:min-h-[180px] md:min-h-[180px] lg:min-h-[240px] xl:h-[240px] 2xl:h-[240px] rounded-2xl flex py-3 sm:py-3 md:py-3 lg:py-12 xl:py-12 2xl:py-12 px-5 gap-x-8">
+                <span class=" text-5xl top-[30px] left-[40px] hidden sm:hiddem md:block lg:block xl:block 2xl:block">
+                  <i class={item.icon} />
+                </span>
+                <div class="flex flex-col gap-y-4">
+                  <h2 class="montserrat-500 black leading-7  text-[20px] text-black top-[29px]  font-medium">
+                    {item.title}
+                  </h2>
+                  <p class="text-[#959595] montserrat-400 top-22  pr-4 font-normal">
+                    {item.description}
+                  </p>
+                </div>
+              </div>
+            );
+          })
+        }
+      </div>
     </div>
   </div>
 </section>

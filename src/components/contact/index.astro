@@ -1,0 +1,127 @@
+---
+import "./_style.scss";
+---
+
+<section id="contact" class="pt-8 pb-10 bg-[#F9FAFF]">
+  <div class="container mx-auto">
+    <h2 class="text-center montserrat-600 text-[#23323B]">
+      Biz bilan bog'lanish
+    </h2>
+    <div
+      class="flex flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row gap-4 justify-between pt-15 pb-12 px-3"
+    >
+      <div
+        class="flex flex-col justify-between w-full sm:w-full md:w-[40%] lg:w-[40%] xl:w-[40%] 2xl:w-[40%] h-[400px] rounded-xl bg-[#23323B] py-9 px-5 text-white"
+      >
+        <div class="flex gap-4 items-center">
+          <div
+            class="w-[50px] h-[50px] rounded-full cursor-pointer bg-[#0000002a] p-6 flex items-center justify-center"
+          >
+            <i class="bi bi-geo-alt text-2xl"></i>
+          </div>
+          <div class="flex flex-col gap-y-2">
+            <h4 class="montserrat-500">Joylashuv</h4>
+            <p class="montserrat-400 leading-5">
+              Tosheknt shahar, Yunusobod tumani, Markaz-4 mavzesi, 34, 34aa-uy
+            </p>
+          </div>
+        </div>
+        <div class="flex gap-4 items-center">
+          <div
+            class="w-[50px] h-[50px] rounded-full cursor-pointer bg-[#0000002a] p-6 flex items-center justify-center"
+          >
+            <i class="bi bi-telephone text-2xl"></i>
+          </div>
+          <div class="flex flex-col gap-y-2">
+            <h4 class="montserrat-500">Aloqa uchun</h4>
+            <p class="montserrat-400 leading-5">+998(90)1234567</p>
+          </div>
+        </div>
+        <div class="flex gap-4 items-center">
+          <div
+            class="w-[50px] h-[50px] rounded-full cursor-pointer bg-[#0000002a] p-6 flex items-center justify-center"
+          >
+            <i class="bi bi-envelope-at text-2xl"></i>
+          </div>
+          <div class="flex flex-col gap-y-2">
+            <h4 class="montserrat-500">Email Manzil</h4>
+            <p class="montserrat-400 leading-5">bestglobalize@gmail.com</p>
+          </div>
+        </div>
+      </div>
+
+      <form
+        action="#"
+        class="flex flex-col justify-between w-full sm:w-full md:w-[55%] lg:w-[55%] xl:w-[55%] 2xl:w-[55%] h-[500px] bg-[#23323B] rounded-xl py-7 px-5"
+      >
+        <div
+          class="flex flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row gap-4 justify-between"
+        >
+          <input
+            required
+            type="text"
+            name="#"
+            id="#"
+            class="rounded-md w-full sm:w-[45%] md:w-[45%] lg:w-[45%] xl:w-[45%] 2xl:w-[45%] h-[46px]"
+            placeholder="Ismingizni kiriting"
+          />
+          <input
+            required
+            type="text"
+            name="#"
+            id="#"
+            class="rounded-md w-full sm:w-[45%] md:w-[45%] lg:w-[45%] xl:w-[45%] 2xl:w-[45%] h-[46px]"
+            placeholder="Familiyangizni kiriting"
+          />
+        </div>
+        <div
+          class="flex flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row gap-4 justify-between"
+        >
+          <input
+            required
+            type="tel"
+            name="#"
+            id="#"
+            class="rounded-md w-full sm:w-[45%] md:w-[45%] lg:w-[45%] xl:w-[45%] 2xl:w-[45%] h-[46px]"
+            placeholder="Telefon raqamingizni kiriting"
+          />
+          <select
+            required
+            id="cars"
+            class="rounded-md w-full sm:w-[45%] md:w-[45%] lg:w-[45%] xl:w-[45%] 2xl:w-[45%] h-[46px]"
+          >
+            <option disabled selected>Viloyatingizni tanlang</option>
+            <option value="sirdaryo">Sirdaryo</option>
+            <option value="navoiy">Navoiy</option>
+            <option value="jizzax">Jizzax</option>
+            <option value="xorazm">Xorazm</option>
+            <option value="buxoro">Buxoro</option>
+            <option value="surxondaryo">Surxondaryo</option>
+            <option value="namangan">Namangan</option>
+            <option value="andijon">Andijon</option>
+            <option value="qashqadaryo">Qashqadaryo</option>
+            <option value="samarqand">Samarqand</option>
+            <option value="fargʻona">Fargʻona</option>
+            <option value="toshkent">Toshkent</option>
+            <option value="toshkent_shahri">Toshkent shahri</option>
+            <option value="qoraqalpogʻiston"
+              >Qoraqalpogʻiston Respublikasi</option
+            >
+          </select>
+        </div>
+        <div class="w-full max-h-[120px] overflow-hidden rounded-md">
+          <textarea
+            required
+            name="#"
+            id="#"
+            class="w-full h-[120px] rounded-md"
+            placeholder="Qo'shimcha savollaringizni yuborishingiz mumkin"
+          ></textarea>
+        </div>
+        <div class="w-full flex justify-center">
+          <button class="montserrat w-[120px]" type="submit"> Yuborish </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

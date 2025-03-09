@@ -1,14 +1,23 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Intro from "@components/intro/index.astro";
+import About from "@components/about/index.astro";
 import Services from "@components/services/index.astro";
+import Information from "@components/information/index.astro";
+import CountryFlags from "@components/flags/index.astro";
+import Questions from "@components/question/index.astro";
+import Location from "@components/location/index.astro";
+import Contact from "@components/contact/index.astro";
 ---
 
+
 <Layout>
- <Intro/>
- <Services/>
-<div class="btn btn-primary">
-    submit
-</div>
- 
+  <Intro />
+  <About /> 
+  <Services /> 
+  <Information /> 
+  <CountryFlags/> 
+  <Questions/> 
+  <Contact/>
+  <Location/> 
 </Layout>

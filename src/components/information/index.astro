@@ -1,0 +1,42 @@
+---
+import "./_style.scss";
+import { information } from "@mocks/index";
+---
+
+<section id="information" class="w-full h-auto pt-8 pb-20 bg-slate-900">
+  <div class="container px-6 mx-auto">
+    <div class="flex flex-col items-center gap-y-36">
+     
+     
+     
+      <div
+        class="flex flex-col gap-y-6 w-full sm:w-full md:w-[700px] lg:w-[700px] xl:w-[700px] 2xl:w-[700px] bg-[#00000091] p-4 rounded-xl"
+      >
+        <p class="text-center text-xl font-bold text-white montserrat-600">
+          Bizning Afzalliklar
+        </p>
+        <p class="text-center text-md text-white montserrat-500">
+          Professional jamoa O‘zbekiston Respublikasi Bandlik va kambag‘allikni
+          qisqartirish vazirligi tomonidan berilgan 607235-sonli rasmiy
+          litsenziyamiz bor
+        </p>
+      </div>
+
+
+      <div class="w-full flex  justify-between  gap-5 flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row items-center">
+        {
+          information.map((item: any) => {
+            return (
+              <div class="bg-[#000000a5] card montserrat-500 rounded-xl p-4 w-[100%] sm:w-[70%] md:w-[370px] lg:w-[270px] xl:w-[270px] 2xl:w-[270px] hover:cursor-pointer flex flex-col justify-center items-center gap-y-4 transform hover:scale-99 text-[13px]">
+                <span class="text-[#FFFFFF] text-6xl">
+                  <i class={item?.icon} />
+                </span>
+                <p class="text-center text-[#FFFFFF] text-md">{item?.info}</p>
+              </div>
+            );
+          })
+        }
+      </div>
+    </div>
+  </div>
+</section>

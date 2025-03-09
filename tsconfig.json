@@ -24,6 +24,8 @@
       "@configs/*": ["configs/*"],
       "@i18n/*": ["i18n/*"],
       "@css/*": ["styles/*"],
+      "@mocks/*":["mocks/*"],
+      "@publick":["publick/*"]
     },
     "jsx": "preserve"
   }

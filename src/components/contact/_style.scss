@@ -1,0 +1,40 @@
+
+#contact h2{
+    font-size: 26px;
+}
+
+
+#contact h4{
+    font-size: 22px;
+}
+
+
+#contact input , #contact select, #contact textarea{
+    padding:12px;
+    color: white;
+    background-color:#64768242;
+}
+
+#contact button{
+    background-color: #151e23;
+    width:100%;
+    height: 40px;
+    border-radius:8px;
+}
+
+#contact button:hover{
+    background-color: #0d1317;
+}
+
+#contact button:active{
+    background-color: #000000;
+}
+
+#contact form input::placeholder, #contact form textarea::placeholder{
+    color: #FFFFFF;
+}
+
+
+#contact .network{
+    width: 30px;
+}

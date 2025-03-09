@@ -2,10 +2,12 @@
 import "./_style.scss";
 ---
 
-<header class="bg-gray-800 text-white">
-  <div class="container mx-auto px-6">
-    <nav class="md:flex justify-between py-1">
-      <ul class="justify-center">
+<header class="bg-gray-800 text-white px-3  montserrat-500">
+  <div class="container mx-auto">
+    <nav
+      class="w-full flex gap-y-6 flex-col sm:flex-col md:flex-col lg:flex-col xl:flex-row 2xl:flex-row justify-between py-1 items-start"
+    >
+      <ul class="flex w-full sm:w-full md:w-full lg:w-[58%] xl:w-[45%]">
         <li class="cursor-pointer mt-1">
           <span>
             <i class="bi bi-geo-alt-fill"></i>
@@ -15,8 +17,10 @@ import "./_style.scss";
           </span>
         </li>
       </ul>
-      <ul class="md:flex gap-x-2 montserrat-500 justify-center">
-        <li>
+      <ul
+        class="montserrat-500 justify-between flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row w-full sm:w-full md:w-[80%] lg:w-[60%] xl:w-[52%] gap-y-1 flex items-start sm:items-center md:items-center lg:items-center xl:items-center 2xl:items-center"
+      >
+        <li class="ml-[-9px]">
           <a class="btn btn-ghost btn-sm" href="tel:+998901234567">
             <i class="bi bi-telephone"></i>
             <span>+998901234567</span>
@@ -38,28 +42,71 @@ import "./_style.scss";
     </nav>
   </div>
 </header>
-<header class="bg-black text-white">
-  <div class="container mx-auto px-6">
-    <div class="header flex justify-between items-center">
-      <div class="navbar flex montserrat-500">
+
+<header class="bg-black text-white px-3 ">
+  <div class="container  mx-auto">
+    <div class="items-center">
+      <div class="navbar montserrat-500 relative">
         <div class="flex-1">
-          <a class="btn-ghost">
-            <img src="/logo.png" alt="logo" class="w-42" />
+          <a
+            class="btn-ghost w-[100px] sm:w-[150px] md:w-[110px] lg:w-[190px] xl:w-[190px] 2xl:w-[190px]"
+          >
+            <img src="./logo.png" alt="logo" class="w-42" />
           </a>
         </div>
-        <div class="flex-none">
-          <nav>
-            <ul class="menu menu-horizontal px-1">
-              <li><a href="#intro">Bosh sahifa</a></li>
-              <li><a href="#about">Biz haqimizda</a></li>
-              <li><a href="#service">Xizmatlarimiz</a></li>
-              <li><a href="#information">Ma'lumot</a></li>
-              <li><a href="#contact">Biz bilan bog'lanish</a></li>
-            </ul>
-          </nav>
-         <nav>
-          <ul class="flex gap-x-2">
-            <li>
+        <nav
+          class="z-50 w-auto sm:w-auto md:w-auto lg:w-[90%] xl:w-[70%] 2xl:w-[70%] flex justify-between p-1 gap-x-7 sm:gap-x-7 md:gap-x-4 lg:gap-x-4 xl:gap-x-4 2xl:gap-x-4"
+        >
+          <ul
+            id="nav-menu"
+            class="transition-all duration-200 absolute sm:absolute md:static lg:static xl:static 2xl:static flex flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row justify-between text-[16px] sm:text-[17px] md:text-[12px] xl:text-[15px] 2xl:text-[18px] w-[100%] sm:w-[100%] md:w-[100%] xl:w-[80%] 2xl:w-[90%] bg-[#1E2938] sm:bg-[#1E2938] md:bg-[#1e293800] lg:bg-[#1e293800] xl:bg-[#1e293800] 2xl:bg-[#1e293800] rounded left-[-120%] top-[90px] gap-y-5"
+          >
+            <li class="pt-7 px-4 sm:px-4 md:p-0 lg:p-0 xl:p-0 2xl:p-0">
+              <a
+                href="#intro"
+                class="hover:bg-[#111113] px-2 sm:px-2 md:px-2 lg:px-2 xl:px-3 2xl:px-5 py-1 rounded-md transition duration-100"
+              >
+                Bosh sahifa
+              </a>
+            </li>
+            <li class="px-4 sm:px-4 md:p-0 lg:p-0 xl:p-0 2xl:p-0">
+              <a
+                href="#about"
+                class="hover:bg-[#111113] px-2 sm:px-2 md:px-2 lg:px-2 xl:px-3 2xl:px-5 py-1 rounded-md transition duration-100"
+              >
+                Biz haqimizda
+              </a>
+            </li>
+            <li class="px-4 sm:px-4 md:p-0 lg:p-0 xl:p-0 2xl:p-0">
+              <a
+                href="#service"
+                class="hover:bg-[#111113] px-2 sm:px-2 md:px-2 lg:px-2 xl:px-3 2xl:px-5 py-1 rounded-md transition duration-100"
+              >
+                Xizmatlarimiz
+              </a>
+            </li>
+            <li class="px-4 sm:px-4 md:p-0 lg:p-0 xl:p-0 2xl:p-0">
+              <a
+                href="#information"
+                class="hover:bg-[#111113] px-2 sm:px-2 md:px-2 lg:px-2 xl:px-3 2xl:px-5 py-1 rounded-md transition duration-100"
+              >
+                Ma'lumot
+              </a>
+            </li>
+            <li class="pb-7 px-4 sm:px-4 md:p-0 lg:p-0 xl:p-0 2xl:p-0">
+              <a
+                href="#contact"
+                class="hover:bg-[#111113] px-2 sm:px-2 md:px-2 lg:px-2 xl:px-3 2xl:px-5 py-1 rounded-md transition duration-100"
+              >
+                Biz bilan bog'lanish
+              </a>
+            </li>
+          </ul>
+
+          <ul
+            class="languages flex gap-x-2 text-[14px] sm:text-[16px] md:text-[11px] xl:text-[15px] 2xl:text-[18px] rounded-md bg-[#111113]"
+          >
+            <li >
               <a href="/">UZ</a>
             </li>
             <li>
@@ -69,9 +116,27 @@ import "./_style.scss";
               <a href="/">EN</a>
             </li>
           </ul>
-         </nav>
-        </div>
+          <button
+            id="menu-toggle"
+            class="pl-4 w-[30px] block sm:block md:hidden lg:hidden xl:hidden 2xl:hidden"
+          >
+            <img src="/public/menuBtn.png" alt="png" />
+          </button>
+        </nav>
       </div>
     </div>
   </div>
 </header>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.getElementById("menu-toggle");
+    const navMenu = document.getElementById("nav-menu");
+
+    if (menuToggle && navMenu) {
+      menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("menuHider");
+      });
+    }
+  });
+</script>

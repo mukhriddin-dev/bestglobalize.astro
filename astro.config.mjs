@@ -23,6 +23,8 @@ export default defineConfig({
                 "@configs": path.resolve("./src/configs"),
                 "@i18n": path.resolve("./src/i18n"),
                 "@css": path.resolve("./src/styles"),
+                "@mocks":path.resolve("./src/mocks"),
+                "@publick":path.resolve("./public")
             },
         },
     },
